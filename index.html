@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="zuzanna barczyk">
+    <title>barczyk - szczygłowski</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="page-content">
+        <header class="header">
+            <div class="header-content">
+                <p>barczyk - szczygłowski portfolio web page</p>
+                <button id="audioControl" aria-label="play or pause background audio">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <main class="main-content">
+            <audio id="audio1" loop>
+                <source src="audio1.mp3" type="audio/mpeg">
+                your browser does not support the audio element.
+            </audio>
+            <audio id="audio2" loop>
+                <source src="audio2.mp3" type="audio/mpeg">
+                your browser does not support the audio element.
+            </audio>
+
+            <a class="hideDisplay" onmouseover="handleHover('audio1')" onmouseout="handleHoverEnd('audio1')">
+                <p>zuzanna barczyk</p>
+                <span class="showDisplayOnHover">
+                    cv
+                    <span class="showBodyOfDisplayOnHover">
+                        <p>education;</p>
+                        <p>    sep 2020 - jul 2024
+                        <br>                silesian university of technology; poland
+                        <br>                    faculty of architecture   
+                        <br>        sep 2022 - dec 2022
+                        <br>                ybl miklos, hungary
+                        <br>                    faculty of architecture and civil engeenering
+                        <br>        mar 2025 -
+                        <br>                university of applied arts, vienna
+                        </p>
+
+                        <p>work experience;</p>
+                        <p>        jan 2023 - aug 2023 
+                        <br>            ovo grąbczewscy architekci, poland
+                        <br>                competition work, technical details, drawings from concept to execution 
+                        <br>        sep 2023 - mar 2024 
+                        <br>            heri&sali architekten, austria
+                        <br>                model making, leading competiton work
+                        <br>        oct 2024 -
+                        <br>            kronaus mitterer architekten
+                        </p>
+
+                        <p>language;</p>
+                        <p>        polish; native
+                        <br>        english; c1, CEFR english certificate pass at grade B
+                        <br>        german; a2+/b1
+                        </p> 
+                    </span>
+                </span>
+            </a>
+
+            <a class="hideDisplay" onmouseover="handleHover('audio2')" onmouseout="handleHoverEnd('audio2')">
+                <p>rafał szczygłowski</p>
+                <span class="showDisplayOnHover">
+                    cv
+                    <span class="showBodyOfDisplayOnHover">
+                        <p>education;</p>
+                        <p>    sep 2020 - jul 2024
+                        <br>                silesian university of technology; poland
+                        <br>                    faculty of architecture   
+                        <br>        sep 2022 - dec 2022
+                        <br>                ybl miklos, hungary
+                        <br>                    faculty of architecture and civil engeenering
+                        <br>        oct 2025 -
+                        <br>                university of applied arts, vienna
+                        </p>
+
+                        <p>work experience;</p>
+                        <p>            feb 2022 - oct 2022
+                        <br>            ultrasurowiec, poland
+                        <br>                freelance
+                        <br>        feb 2023 - sep 2023
+                        <br>            poludnie architekci, poland
+                        <br>                freelance
+                        <br>        oct 2023 - feb 2024
+                        <br>            pichler & traupmann architekten, vienna
+                        <br>                internship, competition work
+                        <br>        aug 2024 - 
+                        <br>            workspace architekten, vienna
+                        </p>
+
+                        <p>language;</p>
+                        <p>        polish; native
+                        <br>        english; c1, CEFR english certificate pass at grade C
+                        <br>        german; a1+
+                        </p> 
+                    </span>
+                </span>
+            </a>
+
+            <h1>projects</h1>
+            <a href="kora.html" class="hideDisplay">
+                <p>kora</p>
+                <span class="showDisplayOnHover">
+                    <img src="images/img1.jpg" class="img1">
+                </span>
+            </a>
+
+            <a href="kolonia.html" class="hideDisplay">
+                <p>kolonia</p>
+                <span class="showDisplayOnHover">
+                    <img src="images/img2.jpg" class="img1">
+                </span>
+            </a>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
