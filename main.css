@@ -1,0 +1,122 @@
+a.hideDisplay{ 
+    position:relative; 
+    z-index: 20; 
+    color: #000; 
+    text-decoration: none; 
+}
+
+a.hideDisplay:hover{ 
+    z-index: 30; 
+}
+
+a.hideDisplay span.showDisplayOnHover{ 
+    display: none; 
+}
+
+a.hideDisplay:hover span.showDisplayOnHover{ 
+    display: block; 
+    position: absolute; 
+    font-size: 18px; 
+    line-height: 25px; 
+    top: 0px; 
+    left: 20px; 
+    width: 400px; 
+    padding: 10px; 
+    background-color: #fff; 
+    color: #000; 
+    text-align: left; 
+}
+
+span.showBodyOfDisplayOnHover{ 
+    font-size: 16px; 
+    font-weight: normal; 
+    color: #444; 
+    line-height: 18px; 
+}
+
+.img1 { 
+    display: block; 
+    position: absolute; 
+    top: 0px; 
+    left: 20px; 
+    width: 400px; 
+    height: auto; 
+    padding: 10px; 
+}
+
+.center { 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 80%; 
+    padding: 100px; 
+}
+
+body, html { 
+    margin: 0; 
+    padding: 2px; 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+}
+
+.page-content { 
+    position: absolute; 
+    top: 2px; 
+    left: 4px; 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.container { 
+    position: relative; 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+}
+
+.image-wrapper { 
+    position: absolute; 
+    width: 200px; 
+    height: auto; 
+    cursor: move; 
+}
+
+.scattered-image { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.image-wrapper:active .scattered-image { 
+    transform: scale(1.1); 
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 2px;
+}
+
+#audioControl {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#audioControl svg {
+    width: 16px;
+    height: 16px;
+}
+
+#audioControl:hover svg {
+    opacity: 0.7;
+}
